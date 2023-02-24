@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SurveyKH</title>
+    <link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+<form>
+    <h1>Market Reseach Survey</h1>
+    <p>plese take a few moments to complete this satisfaction survey.</p><br>
+    <h3>What is your age range?</h3>
+    <select>
+        <option value="age">18-25</option>
+        <option value="age">25-35</option>
+        <option value="age">35-50</option>
+    </select>
+    <h3>What is your yearly income range?</h3>
+    <select>
+        <option value="USD">$0-$25,000</option>
+        <option value="USD">$25,000-$35,000</option>
+        <option value="USD">$35-$1,000,000</option>
+    </select>
+    <h3>Gender</h3>
+
+    <input type="radio" name="gender" value="Male" checked>Male
+    <input type="radio" name="gender" value="Female">Female
+
+    <h3>Which of the following products have yuor purchased in the last 2 months. Please check all that apply.</h3>
+    <input type="checkbox" name="Product" value="Product1">Product 1<br>
+    <input type="checkbox" name="Product" value="Product2">Product 2<br>
+    <input type="checkbox" name="Product" value="Product3">Product 3<br><br>
+
+    <h3>How offen would you use our new product?</h3>
+    <input type="checkbox" name="Daily" value="">Daily<br>
+    <input type="checkbox" name="Weekly" value="">Weekly<br>
+    <input type="checkbox" name="Monthly" value="">Monthly<br>
+
+    <h3>What would you pay for the new product?</h3>
+    <table>
+        <tr>
+            <td>$</td>
+            <td><input type="number"></td>
+            <td>.</td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Dollars</td>
+            <td></td>
+            <td>Cents</td>
+        </tr>
+    </table>
+    <h3>What futures would you like to see in the new product.</h3>
+    <textarea rows="7" cols="100"></textarea>
+
+    <h4>Please rate you lever of agreement with the following statements.</h4>
+        <table id="customers">
+            <tr>
+                <th></th>
+                <th>Strongly Disagree</th>
+                <th>Disagree</th>
+                <th>Agree</th>
+                <th>Strongly Agree</th>
+            </tr>
+            <tr>
+                <th>Our products are priced fairly.</th>
+                <td><input type="checkbox">1</td>
+                <td><input type="checkbox">2</td>
+                <td><input type="checkbox">3</td>
+                <td><input type="checkbox">4</td>
+            </tr>
+            <tr>
+                <th>Our products are hight quality.</th>
+                <td><input type="checkbox">1</td>
+                <td><input type="checkbox">2</td>
+                <td><input type="checkbox">3</td>
+                <td><input type="checkbox">4</td>
+            </tr>
+            <tr>
+                <th>You would recommend our product to a friend or cowoker.</th>
+                <td><input type="checkbox">1</td>
+                <td><input type="checkbox">2</td>
+                <td><input type="checkbox">3</td>
+                <td><input type="checkbox">4</td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="submit"></td>
+            </tr>
+        </table>
+</form>
+</body>
+</html>
